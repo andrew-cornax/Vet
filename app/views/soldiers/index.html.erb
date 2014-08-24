@@ -1,0 +1,10 @@
+<%= link_to "new", new_soldier_path %>
+<hr/>
+
+<% @soldiers.each do |soldier| %>
+
+	<%= link_to soldier.name, soldier_path(:id => soldier.id) %>
+	<%= link_to "edit", edit_soldier_path(:id => soldier.id) %>
+	<br/>
+
+<% end %>
