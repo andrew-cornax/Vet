@@ -1,3 +1,56 @@
 // Place all the styles related to the Soldier controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.soldier-item{
+	border-bottom: 1px #AAAAAA solid;
+	border-left: 1px #AAAAAA solid;
+	background-color:#FEFEFE;
+	width: 320px;
+	height:105px;
+	padding: 5px 5px 2px 5px;
+}
+
+.soldier-item-first{
+	border-top: 1px #AAAAAA solid;
+}
+
+.soldier-detail{
+	display:inline-block;
+	position:relative;
+	margin-left:10px;
+	width:200px;
+	height:100%;
+	overflow:hidden;
+}
+
+.soldier-pic{
+	background-color: #CCCCCC;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+
+.soldier-header{
+	position:absolute;
+	top:0px;
+}
+
+.soldier-name{
+	font-size:14pt;
+}
+
+.soldier-pic:hover{
+	background-color:#555555;
+}
+
+.soldier-description{
+	display:inline-block;
+	position:absolute;
+	top:25px;
+}
+
+.footer{
+	width:320px;
+	border-top:2px black solid; 
+}

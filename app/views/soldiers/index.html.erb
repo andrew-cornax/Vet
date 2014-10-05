@@ -1,10 +1,12 @@
-<%= link_to "new", new_soldier_path %>
-<hr/>
+<h2>Langley Remembers</h2>
 
-<% @soldiers.each do |soldier| %>
+<% @soldiers.each_with_index do |soldier, index| %>
 
-	<%= link_to soldier.name, soldier_path(:id => soldier.id) %>
-	<%= link_to "edit", edit_soldier_path(:id => soldier.id) %>
-	<br/>
+	<%= render :partial => "soldier_item", :locals => {:soldier => soldier, :index=>index} %> 
 
 <% end %>
+
+
+<p> Click <%= link_to "here", new_soldier_path %> to add a new soldier </p>
+
+<div class="footer"/>

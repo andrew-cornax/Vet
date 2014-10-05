@@ -11,3 +11,32 @@
  *= require_self
  *= require_tree .
  */
+
+
+h2{
+font-family:Georgia, serif;	
+}
+
+h3{
+font-family:Georgia, serif;		
+}
+
+
+a{
+	text-decoration:none;
+	color:#555555;
+	font-family:Georgia, serif;
+}
+
+a:hover{
+	color:black;
+}
+
+p{
+	font-family:Georgia, serif;			
+}
+
+strong{
+	font-family:Georgia, serif;		
+}
+
