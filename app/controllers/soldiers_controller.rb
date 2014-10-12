@@ -25,6 +25,7 @@ class SoldiersController < ApplicationController
 		@soldier = Soldier.find(params[:id])
 		@soldier.update_attributes(params[:soldier])
 		@soldier.save!
+		redirect_to root_path
 	end
 
 end

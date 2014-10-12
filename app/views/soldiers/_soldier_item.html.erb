@@ -1,15 +1,19 @@
 
 
-<div class="soldier-item <%if index == 0 %> soldier-item-first <%end%>">
+<div class="soldier-item">
 
-	<%= link_to "", soldier_path(:id => soldier.id), :class => 'soldier-pic' %>
+	<div class='image-container'>
+		<div class='overlay'>
+		</div>
+		<%= image_tag soldier.photo.url(:small), :class => 'soldier-pic' %>
+	</div>
 
 	<div class="soldier-detail">
 		<div class="soldier-header"> <strong class="soldier-name"><%= soldier.name %> </strong> 	<%= link_to "(edit)", edit_soldier_path(:id => soldier.id), :class=>'edit-link' %>
 		</div>
 
 		<div class='soldier-description'>
-		<%= soldier.description %>
+		<p><%= soldier.description %></p>
 		-------------------
 		---------------------------------
 		</div>

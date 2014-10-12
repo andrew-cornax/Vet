@@ -1,5 +1,6 @@
 <%= form_for @soldier, url: {action: "update"} do |f| %>
 	<%= f.text_field :name %>
 	<%= f.text_field :description %>
+	<%= f.file_field :photo %>	
 	<%= f.submit %>
 <% end %>

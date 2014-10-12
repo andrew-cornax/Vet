@@ -1,8 +1,8 @@
 <h2>Langley Remembers</h2>
 
-<% @soldiers.each_with_index do |soldier, index| %>
+<% @soldiers.each do |soldier| %>
 
-	<%= render :partial => "soldier_item", :locals => {:soldier => soldier, :index=>index} %> 
+	<%= render :partial => "soldier_item", :locals => {:soldier => soldier} %> 
 
 <% end %>
 

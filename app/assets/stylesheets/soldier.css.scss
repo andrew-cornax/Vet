@@ -3,12 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .soldier-item{
-	border-bottom: 1px #AAAAAA solid;
-	border-left: 1px #AAAAAA solid;
-	background-color:#FEFEFE;
+	border: 1px #AAAAAA solid;
+	background-color:#FAFAFA;
 	width: 320px;
 	height:105px;
-	padding: 5px 5px 2px 5px;
+	padding: 5px 5px 10px 10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius:3px;
+}
+
+.image-container{
+	position:relative;
+	display:inline-block;
+	cursor:pointer;
 }
 
 .soldier-item-first{
@@ -28,12 +36,16 @@
 	background-color: #CCCCCC;
 	width: 100px;
 	height: 100px;
-	display: inline-block;
+	display: block;
+}
+
+.soldier-pic:hover{
+	opacity:0.5;
 }
 
 .soldier-header{
 	position:absolute;
-	top:0px;
+	top:5px;
 }
 
 .soldier-name{
@@ -48,6 +60,7 @@
 	display:inline-block;
 	position:absolute;
 	top:25px;
+	font-size:10pt;
 }
 
 .footer{
