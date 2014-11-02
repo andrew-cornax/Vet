@@ -24,7 +24,11 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  gem "paperclip", "~> 4.2"
 end
+
+gem 'will_paginate', '~> 3.0'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'

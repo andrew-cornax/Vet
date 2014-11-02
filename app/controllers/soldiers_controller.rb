@@ -1,7 +1,7 @@
 class SoldiersController < ApplicationController
 
 	def index
-		@soldiers = Soldier.all
+		@soldiers = Soldier.paginate(:page => params[:page])
 	end
 
 	def show
@@ -15,6 +15,7 @@ class SoldiersController < ApplicationController
 	def create
 		@soldier = Soldier.new(params[:soldier])
 		@soldier.save!
+		redirect_to root_path
 	end
 
 	def edit

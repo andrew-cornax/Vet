@@ -12,13 +12,13 @@
  *= require_tree .
  */
 
+ html,body{
+ 	margin:0px;
+ 	height:100%;
+ }
 
-h2{
-font-family:Segoe UI, sans-serif;
-}
-
-h3{
-font-family:Segoe UI, sans-serif;
+input, label, h2, h3{
+	font-family:Segoe UI, sans-serif;
 }
 
 
@@ -40,6 +40,34 @@ strong{
 	font-family:Segoe UI, sans-serif;	
 }
 
+.header{
+	width:100%;
+	height:25%;
+	background-image:url("poppies.jpg");
+	background-size:cover;
+}
+
+.main-container{
+	margin:8px;
+	margin-left:20%;
+	position:relative;
+}
+
+.header-title{
+	color:white;
+	margin-left: 20%;
+	padding-top: 5%;
+	font-family:Segoe UI, sans-serif;		
+}
+
+.footer{
+	position:absolute;
+	bottom:0px;
+	height:10%;
+	width:100%;
+	background-color:#555555;
+}
+
 .overlay{
 	position:absolute;
 	width:100%;
@@ -51,4 +79,34 @@ strong{
 	opacity:0.3;
 	background-color:#000000;
 }
+
+form .form-field{
+	position:relative;
+	padding:5px 0px 5px 0px;
+}
+
+form .label{
+	position:absolute;
+	text-align:right;
+	width:140px;
+}
+
+form input{
+	position:relative;
+	left:160px;
+}
+
+form .jqte{
+	position:relative;
+	left:160px;
+	display:inline-block;
+	margin-top:0px;
+	margin-bottom:5px;
+}
+
+form .input-container{
+	display:inline-block;
+}
+
+
 

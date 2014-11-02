@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+	<div class='header'> 
+		<div class='header-title'>
+			<div style="font-size:24pt;">Langley Remembers</div>
+			<div style="font-size:14pt;"> Lest we forget </div>
+		</div>
+	</div>
+	<div class='main-container'>
+		<%= yield %>
+	</div>
+	<div class='footer'></div>
 
 </body>
 </html>

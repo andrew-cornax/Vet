@@ -1,12 +1,14 @@
-<h2>Langley Remembers</h2>
+<div id="soldier-list">
 
-<% @soldiers.each do |soldier| %>
+	<% @soldiers.each do |soldier| %>
 
-	<%= render :partial => "soldier_item", :locals => {:soldier => soldier} %> 
+		<%= render :partial => "soldier_item", :locals => {:soldier => soldier} %> 
 
-<% end %>
+	<% end %>
 
+	<%= will_paginate @soldiers %>
+	<div id="soldier-list-footer">
+		<p> Click <%= link_to "here", new_soldier_path %> to add a new soldier </p>
+	</div>
 
-<p> Click <%= link_to "here", new_soldier_path %> to add a new soldier </p>
-
-<div class="footer"/>
+</div>
