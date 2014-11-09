@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require_tree .
+ *= require jquery.ui.all
  */
 
  html,body{
@@ -108,5 +109,22 @@ form .input-container{
 	display:inline-block;
 }
 
+.ui-dialog.ui-widget{
+	padding:0px;
+	border: 1px #A05C0C solid;
+}
 
+.ui-dialog-titlebar.ui-widget-header{
+	border-radius: 2px 2px 0px 0px;
+	background: #B08C1C;
+	border:none
+}
+
+.ui-dialog-buttonpane.ui-widget-content{
+	border-color: #A05C0C;
+}
+
+.ui-dialog.ui-button{
+	color:white;
+}
 

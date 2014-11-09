@@ -12,3 +12,9 @@
 	</div>
 
 </div>
+
+<% @soldiers.each do |soldier| %>
+
+<%= render :partial => "soldier_dialog", :locals => {:soldier => soldier} %>
+
+<% end %>

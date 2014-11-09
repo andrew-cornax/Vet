@@ -1,14 +1,17 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 gem 'rails', '3.2.13'
-
-gem 'debugger'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
 
+group :development do
+	gem 'debugger', '1.6.5'
+end
+
+gem 'pg'
 
 gem 'rabl'
 gem 'oj'
@@ -24,9 +27,9 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-
-  gem "paperclip", "~> 4.2"
 end
+gem "paperclip"	
+gem 'aws-sdk'
 
 gem 'will_paginate', '~> 3.0'
 

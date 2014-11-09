@@ -1,11 +1,10 @@
 class AddAttachmentPhotoToSoldiers < ActiveRecord::Migration
-  def self.up
+  def change
     change_table :soldiers do |t|
-      t.attachment :photo
+	    t.string   :photo_file_name
+	    t.string   :photo_content_type
+	    t.integer  :photo_file_size
+	    t.datetime :photo_updated_at
     end
-  end
-
-  def self.down
-    remove_attachment :soldiers, :photo
   end
 end
