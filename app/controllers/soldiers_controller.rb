@@ -29,4 +29,10 @@ class SoldiersController < ApplicationController
 		redirect_to root_path
 	end
 
+	def destroy
+		@soldier = Soldier.find(params[:id])
+		@soldier.destroy
+		redirect_to root_path
+	end
+
 end

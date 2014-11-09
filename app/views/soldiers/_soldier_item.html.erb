@@ -9,7 +9,9 @@
 	</div>
 
 	<div class="soldier-detail">
-		<div class="soldier-header"> <strong class="soldier-name"><%= soldier.name %> </strong> 	<%= link_to "(edit)", edit_soldier_path(:id => soldier.id), :class=>'edit-link' %>
+		<div class="soldier-header"> <strong class="soldier-name"><%= soldier.name %> </strong> 	
+			<%= link_to "(edit)", edit_soldier_path(:id => soldier.id), :class=>'edit-link' %>
+			<%= link_to "(delete)", soldier_path(:id => soldier.id), :method => 'delete', :class=>'edit-link' %>
 		</div>
 
 		<div class='soldier-description'>
