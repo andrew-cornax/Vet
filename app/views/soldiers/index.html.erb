@@ -7,9 +7,12 @@
 	<% end %>
 
 	<%= will_paginate @soldiers %>
-	<div id="soldier-list-footer">
-		<p> Click <%= link_to "here", new_soldier_path %> to add a new soldier </p>
-	</div>
+
+	<% if @current_user%>
+		<div id="soldier-list-footer">
+			<p> Click <%= link_to "here", new_soldier_path %> to add a new soldier </p>
+		</div>
+	<% end %>
 
 </div>
 

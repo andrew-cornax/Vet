@@ -10,8 +10,10 @@
 
 	<div class="soldier-detail">
 		<div class="soldier-header"> <strong class="soldier-name"><%= soldier.name %> </strong> 	
-			<%= link_to "(edit)", edit_soldier_path(:id => soldier.id), :class=>'edit-link' %>
-			<%= link_to "(delete)", soldier_path(:id => soldier.id), :method => 'delete', :class=>'edit-link' %>
+			<% if @current_user%>
+				<%= link_to "(edit)", edit_soldier_path(:id => soldier.id), :class=>'edit-link' %>
+				<%= link_to "(delete)", soldier_path(:id => soldier.id), :method => 'delete', :class=>'edit-link' %>
+			<% end %>
 		</div>
 
 		<div class='soldier-description'>

@@ -1,5 +1,7 @@
 class SoldiersController < ApplicationController
 
+	skip_before_filter :require_login, only:[:index,:show]
+
 	def index
 		@soldiers = Soldier.paginate(:page => params[:page])
 	end

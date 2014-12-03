@@ -1,0 +1,11 @@
+<%= form_tag('/login', :method => 'post') do%>
+	<div class='form-field'>
+		<div class='label'>Username</div>
+		<%=text_field_tag 'username'%>
+	</div>
+	<div class='form-field'>
+		<div class='label'>Password</div>
+		<%=password_field_tag 'password'%>
+	</div>
+	<%=submit_tag 'Login', :class=> 'ui-button'%>
+<% end %>

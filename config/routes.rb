@@ -4,7 +4,9 @@ Vet::Application.routes.draw do
   root :to => 'soldiers#index'
   resources :soldiers
 
-  # The priority is based upon order of creation:
+  get 'login', :to => 'login#login'
+
+  # The priority is based upon rails routeorder of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
