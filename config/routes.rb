@@ -5,6 +5,7 @@ Vet::Application.routes.draw do
   resources :soldiers
 
   get 'login', :to => 'login#login'
+  post 'login', :to => 'login#login' 
 
   # The priority is based upon rails routeorder of creation:
   # first created -> highest priority.
