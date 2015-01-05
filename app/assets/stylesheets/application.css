@@ -32,7 +32,7 @@ a{
 a:hover{
 	color:black;
 }
-
+ 
 p{
 	font-family:Segoe UI, sans-serif;		
 }
@@ -90,11 +90,6 @@ form .label{
 	position:absolute;
 	text-align:right;
 	width:140px;
-}
-
-form input{
-	position:relative;
-	left:160px;
 }
 
 form .jqte{

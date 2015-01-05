@@ -8,6 +8,7 @@ $(document).ready(function(){
 			$("#soldier_dialog_"+id).dialog({
 				modal:true,
 				minWidth:660,
+				maxHeight:600,
 				buttons:{
 					close: function(){
 						$(this).dialog('close');

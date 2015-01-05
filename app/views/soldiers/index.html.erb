@@ -8,11 +8,13 @@
 
 	<%= will_paginate @soldiers %>
 
-	<% if @current_user%>
 		<div id="soldier-list-footer">
-			<p> Click <%= link_to "here", new_soldier_path %> to add a new soldier </p>
+			<% if @current_user%>
+				<p> Click <%= link_to "here", new_soldier_path %> to add a new soldier </p>
+			<% else %>
+				<p> If you want to add a soldier, contact me at fredcornax-AT-hotmail.com </p>
+			<% end %>
 		</div>
-	<% end %>
 
 </div>
 
