@@ -86,6 +86,16 @@ form .form-field{
 	padding:5px 0px 5px 0px;
 }
 
+input{
+	position:relative;
+	left:160px;
+}
+
+textarea{
+	position:relative;
+	left:160px;
+}
+
 form .label{
 	position:absolute;
 	text-align:right;

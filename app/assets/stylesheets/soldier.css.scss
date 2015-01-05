@@ -48,10 +48,17 @@
 .soldier-header{
 	position:absolute;
 	top:5px;
+	width:100%;
 }
 
 .soldier-name{
 	font-size:14pt;
+	font-weight:bold;
+	max-width:240px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	float:left;
+	white-space:no-wrap;
 }
 
 .soldier-pic:hover{

@@ -10,6 +10,6 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-  	@current_user = User.where(:username => cookies[:username])
+  	@current_user = User.where(:username => cookies[:username]).first
   end
 end

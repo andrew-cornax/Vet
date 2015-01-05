@@ -9,11 +9,14 @@
 	</div>
 
 	<div class="soldier-detail">
-		<div class="soldier-header"> <strong class="soldier-name"><%= soldier.name %> </strong> 	
-			<% if @current_user%>
-				<%= link_to "(edit)", edit_soldier_path(:id => soldier.id), :class=>'edit-link' %>
-				<%= link_to "(delete)", soldier_path(:id => soldier.id), :method => 'delete', :class=>'edit-link' %>
-			<% end %>
+		<div class="soldier-header">
+			<div style="float:right">
+				<% if @current_user%>
+					<%= link_to "(edit)", edit_soldier_path(:id => soldier.id), :class=>'edit-link' %>
+					<%= link_to "(delete)", soldier_path(:id => soldier.id), :method => 'delete', :class=>'edit-link' %>
+				<% end %>
+			</div>
+			<div class="soldier-name"><%= soldier.name %></div> 	
 		</div>
 
 		<div class='soldier-description'>
