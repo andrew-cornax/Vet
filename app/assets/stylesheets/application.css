@@ -52,6 +52,8 @@ strong{
 	margin:8px;
 	margin-left:20%;
 	position:relative;
+	max-height: 570px;
+	overflow: hidden;
 }
 
 .header-title{
@@ -109,6 +111,8 @@ form .jqte{
 	margin-top:0px;
 	margin-bottom:5px;
 	max-height:400px;
+	overflow: scroll;
+	max-width: 650px;
 }
 
 form .input-container{
