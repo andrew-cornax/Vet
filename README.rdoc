@@ -1,1 +1,2 @@
 
+A WWI memorial site. There is support built in to allow non technical users to edit content on the site.
